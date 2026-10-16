@@ -106,7 +106,7 @@ export default function Navbar() {
                 
                 {/* معلومات المستخدم */}
                 <div 
-                  onClick={() => { setIsOpen(false); navigate(`/profile/${userData?._id || ''}`); }}
+                  onClick={() => { setIsOpen(false); navigate(`/profile/`); }}
                   className="px-4 py-3 border-b border-gray-100 dark:border-slate-800 cursor-pointer hover:bg-gray-50 dark:hover:bg-slate-800/60 transition"
                 >
                   <p className="text-xs font-bold text-gray-900 dark:text-white truncate">{userData?.name || "User"}</p>
@@ -127,7 +127,7 @@ export default function Navbar() {
                   </button>
 
                   <button
-                    onClick={() => { setIsOpen(false); navigate(`/profile/${userData?._id || ''}`); }}
+                    onClick={() => { setIsOpen(false); navigate(`/profile`); }}
                     className="w-full flex items-center gap-3 px-4 py-2.5 text-xs font-medium text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-slate-800 transition cursor-pointer"
                   >
                     <User className="w-4 h-4 text-[#149188]" />

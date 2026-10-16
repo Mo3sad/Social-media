@@ -11,23 +11,18 @@ import type { UserDataType } from "../types/user.Type";
 
 type UserDataContextType = {
   userData: UserDataType | null;
-  setuserData: React.Dispatch<
-    React.SetStateAction<UserDataType | null>
-  >;
+  setuserData: React.Dispatch<React.SetStateAction<UserDataType | null>>;
   isLoadingUser: boolean;
   getUserProfile: () => Promise<void>; // أضفنا الدالة هنا
 };
 
-export const userDataContext =
-  createContext<UserDataContextType | null>(null);
+export const userDataContext = createContext<UserDataContextType | null>(null);
 
 type UserDataProviderProps = {
   children: ReactNode;
 };
 
-export function UserDataProvider({
-  children,
-}: UserDataProviderProps) {
+export function UserDataProvider({ children }: UserDataProviderProps) {
   const [userData, setuserData] = useState<UserDataType | null>(null);
   const [isLoadingUser, setIsLoadingUser] = useState(true);
 
@@ -48,10 +43,11 @@ export function UserDataProvider({
             token,
             Authorization: `Bearer ${token}`,
           },
-        }
+        },
       );
 
       const user = response.data.data.user;
+      // console.log(userData);
       setuserData(user);
     } catch (error) {
       console.error("Failed to fetch user profile:", error);
@@ -71,7 +67,7 @@ export function UserDataProvider({
         userData,
         setuserData,
         isLoadingUser,
-        getUserProfile, 
+        getUserProfile,
       }}
     >
       {children}
