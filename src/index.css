@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* أضف السطر ده لتفعيل خيار الـ Class للـ Dark Mode */
+@custom-variant dark (&:where(.dark, .dark *));
+/* Custom Scrollbar for Dark Mode */
+::-webkit-scrollbar {
+  width: 6px; /* عرض السكرول بار */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #334155; /* لون المؤشر غامق ومريح */
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #149188; /* يتحول للون الأخضر الزيتي عند الوقوف عليه */
+}
+
+/* دعم متصفح Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #334155 transparent;
+}
