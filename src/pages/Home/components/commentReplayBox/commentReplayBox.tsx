@@ -24,7 +24,7 @@ export default function CommentReplyBox({
   commentID,
 }: CommentReplyBoxProps) {
   const user = useContext(userDataContext);
-  const userData = user?.userData;
+  // const userData = user?.userData;
   const [isClose, setIsClose] = useState(false);
   let userdata = user?.userData;
 

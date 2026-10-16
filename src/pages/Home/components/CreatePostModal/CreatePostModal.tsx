@@ -1,4 +1,4 @@
-import { useRef, useContext, useEffect, useState } from "react";
+import { useRef, useContext, useEffect } from "react";
 import { Image, X, Globe, Smile, Video } from "lucide-react";
 import { userDataContext } from "../../../../Context/userData.Context";
 import axios from "axios";

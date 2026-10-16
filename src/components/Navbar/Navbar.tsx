@@ -1,4 +1,4 @@
-import { Search, ChevronDown, Sun, Moon, User, Home, LogOut, Settings, Bell } from "lucide-react";
+import { Search, ChevronDown, Sun, Moon, User, Home, LogOut, Settings } from "lucide-react";
 import { useTheme } from "../../Context/ThemeContext";
 import { useContext, useState, useRef, useEffect } from "react";
 import { userDataContext } from "../../Context/userData.Context";

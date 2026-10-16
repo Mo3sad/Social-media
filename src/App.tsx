@@ -13,7 +13,7 @@ import {UserDataProvider} from "./Context/userData.Context"
 import SinglePost from "./pages/Home/components/singlePost/singlePost";
 import { Toaster } from "react-hot-toast";
 import UserProfile from "./pages/Profile/UserProfile";
-import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
+
 import Settings from "./pages/Settings/Settings";
 const queryClient = new QueryClient();
 function App() {

@@ -1,5 +1,5 @@
-import { useContext, useEffect, useRef, useState } from "react";
-import { Globe, Users, Lock } from "lucide-react";
+import { useContext, useEffect, useState } from "react";
+
 import type {
   Comment,
   CommentsResponse,

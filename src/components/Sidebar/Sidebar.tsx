@@ -1,9 +1,9 @@
-import { NavLink, useNavigate, useLocation } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { Home, User, Settings, LogOut } from "lucide-react";
 
 export default function Sidebar() {
   const navigate = useNavigate();
-  const location = useLocation();
+
 
   const menuItems = [
     { name: "Home", path: "/", icon: Home },

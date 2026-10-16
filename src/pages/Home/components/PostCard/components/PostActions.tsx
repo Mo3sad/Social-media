@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import {
-  Heart,
+  
   MessageSquare,
   Share2,
   Bookmark,
